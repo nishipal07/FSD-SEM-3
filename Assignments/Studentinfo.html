@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+</head>
+<body>
+    <script>
+        function calculate_marks(m1,m2,m3,m4) {
+            let totalmarks=m1+m2+m3+m4;
+            let total=400;
+            let percentage=(totalmarks*100)/total;
+            return percentage;
+        }
+        
+        let name=prompt("Enter Your Name");
+        let roll_number=prompt("Enter Your roll number");
+        let m1=parseInt(prompt("Enter Your Maths marks"));
+        let m2=parseInt(prompt("Enter Your DSA numvber"));
+        let m3=parseInt(prompt("Enter your FSD marks"));
+        let m4=parseInt(prompt("Enter your Python marks"));
+        let result=calculate_marks(m1,m2,m3,m4);
+        document.write("Name: "+name+"<br>");
+        document.write("Roll Number: "+roll_number+"<br>");
+        document.write("Percentage: "+result);
+    </script>
+</body>
+</html>
