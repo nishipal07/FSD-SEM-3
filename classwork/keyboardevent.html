@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form">
+        <h1 id="h1">Keyboard events</h1>
+            <p>onkeydown</p>
+            <input type="text" onkeydown="document.getElementById('form').style.background = this.value">
+            <p>onkeyup</p>
+            <input type="text" onkeyup="document.getElementById('form').style.background = this.value">
+            <p>onkeypress</p>
+            <input type="text" onkeypress="document.getElementById('form').style.background = this.value">
+    </div>
+    <!-- <form>
+    <label for="name">Full Name :</label>
+    <input type="text" id="name" name="Full Name" placeholder="Enter your Name">
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email id">
+
+    <label for="number">Phone Number :</label>
+    <input type="number" id="number" name="phone number" placeholder="Enter phone number">
+
+    <label for="branch">Branch :</label>
+    <input type="text" id="branch" name="branch" placeholder="Enter your Branch">
+
+    <label for="section">Section :</label>
+    <input type="text" id="section" name="Section" placeholder="Enter your Section">
+
+    <button type="submit">Submit</button> -->
+</form>
+</body>
+</html>
