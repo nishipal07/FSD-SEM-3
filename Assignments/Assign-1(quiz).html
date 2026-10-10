@@ -1,0 +1,173 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Knowledge Quiz</title>
+    <link rel="stylesheet" href="assigncss.css">
+</head>
+
+<body>
+
+    <!-- Student Details -->
+    <div id="quiz-container">
+
+        <h1>General Knowledge Quiz</h1>
+
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br><br>
+
+        <label>Roll Number:</label>
+        <input type="text" id="roll" placeholder="Enter your roll number">
+        <br><br>
+
+        <label>Section:</label>
+        <input type="text" id="section" placeholder="Enter your section">
+        <br><br>
+
+        <label>Branch:</label>
+        <input type="text" id="branch" placeholder="Enter your branch">
+        <br><br>
+
+        <button type="button" onclick="startQuiz()">Start Quiz</button>
+
+    </div>
+
+
+    <!-- Quiz -->
+    <div id="quiz" style="display:none;">
+
+        <h1>General Knowledge Quiz</h1>
+
+
+        <!-- Question 1 -->
+        <div class="question" id="question1">
+
+            <p>1. What is the capital of France?</p>
+
+            <input type="radio" name="q1" value="Paris"
+                onclick="checkAnswer(this, 'Paris')"> Paris<br>
+
+            <input type="radio" name="q1" value="London"
+                onclick="checkAnswer(this, 'Paris')"> London<br>
+
+            <input type="radio" name="q1" value="Berlin"
+                onclick="checkAnswer(this, 'Paris')"> Berlin<br>
+
+            <input type="radio" name="q1" value="Madrid"
+                onclick="checkAnswer(this, 'Paris')"> Madrid<br><br>
+
+            <button type="button" onclick="nextQuestion(1)">Next</button>
+
+        </div>
+
+
+        <!-- Question 2 -->
+        <div class="question" id="question2" style="display:none;">
+
+            <p>2. Which planet is known as the Red Planet?</p>
+
+            <input type="radio" name="q2" value="Mars"
+                onclick="checkAnswer(this, 'Mars')"> Mars<br>
+
+            <input type="radio" name="q2" value="Venus"
+                onclick="checkAnswer(this, 'Mars')"> Venus<br>
+
+            <input type="radio" name="q2" value="Jupiter"
+                onclick="checkAnswer(this, 'Mars')"> Jupiter<br>
+
+            <input type="radio" name="q2" value="Earth"
+                onclick="checkAnswer(this, 'Mars')"> Earth<br><br>
+
+            <button type="button" onclick="nextQuestion(2)">Next</button>
+
+        </div>
+
+
+        <!-- Question 3 -->
+        <div class="question" id="question3" style="display:none;">
+
+            <p>3. What is the largest ocean on Earth?</p>
+
+            <input type="radio" name="q3" value="Pacific"
+                onclick="checkAnswer(this, 'Pacific')"> Pacific<br>
+
+            <input type="radio" name="q3" value="Atlantic"
+                onclick="checkAnswer(this, 'Pacific')"> Atlantic<br>
+
+            <input type="radio" name="q3" value="Indian"
+                onclick="checkAnswer(this, 'Pacific')"> Indian<br>
+
+            <input type="radio" name="q3" value="Arctic"
+                onclick="checkAnswer(this, 'Pacific')"> Arctic<br><br>
+
+            <button type="button" onclick="nextQuestion(3)">Next</button>
+
+        </div>
+
+
+        <!-- Question 4 -->
+        <div class="question" id="question4" style="display:none;">
+
+            <p>4. What is the capital of Japan?</p>
+
+            <input type="radio" name="q4" value="Tokyo"
+                onclick="checkAnswer(this, 'Tokyo')"> Tokyo<br>
+
+            <input type="radio" name="q4" value="Beijing"
+                onclick="checkAnswer(this, 'Tokyo')"> Beijing<br>
+
+            <input type="radio" name="q4" value="Seoul"
+                onclick="checkAnswer(this, 'Tokyo')"> Seoul<br>
+
+            <input type="radio" name="q4" value="New York"
+                onclick="checkAnswer(this, 'Tokyo')"> New York<br><br>
+
+            <button type="button" onclick="nextQuestion(4)">Next</button>
+
+        </div>
+
+
+        <!-- Question 5 -->
+        <div class="question" id="question5" style="display:none;">
+
+            <p>5. What is the capital of India?</p>
+
+            <input type="radio" name="q5" value="Kolkata"
+                onclick="checkAnswer(this, 'New Delhi')"> Kolkata<br>
+
+            <input type="radio" name="q5" value="New Delhi"
+                onclick="checkAnswer(this, 'New Delhi')"> New Delhi<br>
+
+            <input type="radio" name="q5" value="Chennai"
+                onclick="checkAnswer(this, 'New Delhi')"> Chennai<br>
+
+            <input type="radio" name="q5" value="Rajasthan"
+                onclick="checkAnswer(this, 'New Delhi')"> Rajasthan<br><br>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+
+        </div>
+
+
+        <!-- Result -->
+        <div id="result" style="display:none;">
+
+            <h2>Quiz Completed!</h2>
+
+            <p id="score"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="assignjava.js"></script>
+
+</body>
+
+</html>
+```
